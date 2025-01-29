@@ -137,9 +137,15 @@ btnDetener.addEventListener('click', () => {
 });
 
 btnNuevo.addEventListener('click', () => {
+    console.clear();
     btnPedir.disabled = false;
     btnDetener.disabled = false;
     deck = [];
     crearDeck();
-    
+    puntosComputadora = 0;
+    puntosJugador = 0;
+    puntos[0].innerText = 0;
+    puntos[1].innerText = 0;
+    divCartasComputadora.innerHTML = '';
+    divCartasJugador.innerHTML = '';
 });
